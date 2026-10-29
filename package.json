@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-pbgc",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "PBGC MCP — pension plan terminations and premium filings.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-pbgc": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "pbgc"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-pbgc.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/pbgc",
   "pipeworx": {
-    "sourceHash": "v1-e48c4eea4edcaab3b1a008e8e19e79a7d3356ad5eda0934e762ccd8cfd972b1b",
-    "sourceCommit": "0f33463aa47677f38e4f177a4b4a7160dd80819f"
+    "mode": "gateway",
+    "slug": "pbgc",
+    "gatewaySlug": "pbgc",
+    "sourceHash": "v1-0840b1ad85a0fa6852d837cd6374dea3818cd5fb470b98d865bdd9b704fb0e01",
+    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
   }
 }
