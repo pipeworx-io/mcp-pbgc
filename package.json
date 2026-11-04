@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-pbgc",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "PBGC MCP — pension plan terminations and premium filings.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "pbgc",
     "gatewaySlug": "pbgc",
-    "sourceHash": "v1-0840b1ad85a0fa6852d837cd6374dea3818cd5fb470b98d865bdd9b704fb0e01",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-a0e9eeb7134d4711adb00d09f012187a18e3948003443bd111e8a7e64f63767c",
+    "sourceCommit": "243a06a6ca2d3b6075325f3b66a1468d0a2eb603"
   }
 }
